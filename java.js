@@ -1,6 +1,3 @@
-// ==========================================
-// 1. LÓGICA DEL CARRUSEL DE IMÁGENES
-// ==========================================
 const slides = document.querySelectorAll('.carousel-slide');
 const dots = document.querySelectorAll('.dot');
 const prevBtn = document.querySelector('.prev-btn');
@@ -68,15 +65,18 @@ dots.forEach((dot, index) => {
 startAutoSlide();
 
 
-// ==========================================
-// 2. LÓGICA DE SELECCIÓN DE TURNOS Y WHATSAPP
-// ==========================================
+
 const horariosPorDia = {
+    "Lunes": ["09:00", "10:00", "11:30", "13:00", "16:00", "17:30", "19:00"],
+    "Martes": ["09:00", "10:00", "11:30", "13:00", "16:00", "17:30", "19:00"],
+    "Miércoles": ["09:00", "10:00", "11:30", "13:00", "16:00", "17:30", "19:00"],
+    "Jueves": ["09:00", "10:00", "11:30", "13:00", "16:00", "17:30", "19:00"],
+    "Viernes": ["09:00", "10:00", "11:30", "13:00", "16:00", "17:30", "19:00"],
     "Sábado": ["09:00", "10:00", "11:30", "13:00", "16:00", "17:30", "19:00"],
     "Domingo": ["10:00", "11:00", "12:00", "13:00", "14:00"]
 };
 
-// Reemplazá con tu número real de WhatsApp (código de país sin el +)
+
 const numeroWhatsApp = "549388XXXXXXX";
 
 const daySelect = document.getElementById('day-select');
