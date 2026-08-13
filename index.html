@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Tercer Espejo| Reserva tu Turno</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="img/minimalist-elegant-vector-logo-icon-of-a-single-op.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="barber-pole pole-left"></div>
+    <div class="barber-pole pole-right"></div>
+
+    <div class="main-container">
+        <header>
+            <h1>El Tercer Espejo<span>Barbershop</span></h1>
+            <p class="subtitle">Estilo y elegancia en cada corte</p>
+        </header>
+
+        <section class="links-section">
+            <a href="https://instagram.com/tu_barberia" target="_blank" class="social-btn instagram">📷 Instagram</a>
+            <a href="https://maps.google.com/?q=tu+ubicacion" target="_blank" class="social-btn location">📍 Ubicación</a>
+        </section>
+
+
+        <section class="gallery-section">
+            <h2>Nuestros Cortes</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+
+                    <div class="carousel-slide active">
+                        <img src="img/1.png" alt="Corte de cabello ">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/2.jpeg" alt="Corte Fade 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/3.jpeg" alt="Buzz-cut">
+                    </div>
+                </div>
+
+
+                <button class="carousel-btn prev-btn">&#10094;</button>
+                <button class="carousel-btn next-btn">&#10095;</button>
+
+
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <h2>Reserva tu Turno</h2>
+            <p>Atendemos exclusivamente los fines de semana.</p>
+
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="day-select">Seleccioná un día:</label>
+                    <select id="day-select" required>
+                        <option value="" disabled selected>Elegí el día...</option>
+                        <option value="Sábado">Sábado</option>
+                        <option value="Domingo">Domingo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="time-select">Horarios disponibles:</label>
+                    <select id="time-select" required disabled>
+                        <option value="" disabled selected>Primero elegí un día</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="whatsapp-btn">📱 Reservar por WhatsApp</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
